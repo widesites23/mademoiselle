@@ -1,0 +1,48 @@
+
+// theme fonts
+
+
+$font-family-serif: 'Bodoni-Book';
+$font-family-italic: 'BodoniStd-BookItalic';
+$font-family-sans-serif: 'Lato', sans-serif;
+$headings-font-family: $font-family-serif;
+
+@font-face {
+    font-family: $font-family-serif;
+    src: url(assets/fonts/Bodoni-Book.eot?#iefix) format("embedded-opentype"),
+      url(assets/fonts/Bodoni-Book.otf) format("opentype"),
+      url(assets/fonts/Bodoni-Book.svg) format("svg"),
+      url(assets/fonts/Bodoni-Book.woff) format("woff"),
+      url(assets/fonts/Bodoni-Book.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: $font-family-italic;
+  src: url(assets/fonts/BodoniStd-BookItalic.eot?#iefix) format("embedded-opentype"),
+    url(assets/fonts/BodoniStd-BookItalic.otf) format("opentype"),
+    url(assets/fonts/BodoniStd-BookItalic.svg) format("svg"),
+    url(assets/fonts/BodoniStd-BookItalic.woff) format("woff"),
+    url(assets/fonts/BodoniStd-BookItalic.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
+
+h1, h2 {
+  font-family: $headings-font-family;
+  color: $primary-text;
+}
+h3,h4,h5,h6 {
+  font-family: $font-family-sans-serif;
+  color: $primary-text;
+}
+
+p, a {
+  font-family: $font-family-sans-serif;
+  color: $primary-text;
+}
+
+

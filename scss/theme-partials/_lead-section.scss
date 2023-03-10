@@ -1,0 +1,75 @@
+.lead-section {
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        width: 100%;
+        padding: 22rem 0 27rem;
+        text-align: center;
+        font-family: $headings-font-family;
+        font-size: 5rem;
+        line-height: 6.4rem;
+        letter-spacing: 0.2rem;
+        color: $white;
+
+        &.title-404 {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    a {
+        color: $white;
+        @include button-outlined;
+        &:hover {
+            color: $white; 
+        }
+
+        &.btn-svetlo {
+            border: 1px solid $white;
+            display: inline;
+            margin: 0 auto;
+        }
+    }
+
+    .msg-404 {
+        padding: 16.6rem 0 21.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .lead-section {
+        h1 {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 6rem;
+            line-height: 7.4rem;
+            letter-spacing: 1rem;
+
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .lead-section {
+        h1 {
+            width: 60%;
+            margin: 0 auto;
+            padding: 22rem 0 27rem;
+            text-align: center;
+            font-family: $headings-font-family;
+            font-size: 6rem;
+            line-height: 8.4rem;
+            letter-spacing: 2rem;
+            color: $white;
+
+            &.dodatak {
+                color: red;
+                padding: 0;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+//index.html
+.service-feat {
+    .servicefeat-title {
+        @include h2naslov; //_mixins.scss
+    }
+
+    .service-msg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 4rem;
+        background-color: #F5F5F5;
+        text-transform: uppercase;
+
+        &.peach-bg {
+            background-color: $peach;
+        }
+
+        & h3 {
+            margin-bottom: 3.6rem;
+        }
+
+        .btn-outlined {
+            @include button-outlined;
+
+        }
+    }
+
+    .service-img {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        order: -1;
+        overflow: hidden;
+
+        img {
+            display: block;
+            max-width: 100%;
+            transform: translateY(0.2rem) scale(1.05);
+            transition: transform 0.3s linear;
+
+            &:hover {
+                transform: translateY(0.2rem) scale(1.15);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .service-feat {
+        .servicefeat-title {
+            @include h2naslov;
+        }
+
+        .service-msg {
+            padding: 5rem;
+
+            & h3 {
+                line-height: 3rem;
+                font-size: 2.5rem;
+            }
+        }
+
+        .service-img {
+            overflow: hidden;
+
+            img {
+                transform: translateY(0.2rem) scale(1.05);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .service-feat {
+        .servicefeat-title {
+            @include h2naslov;
+        }
+
+        .service-msg {
+            padding: 6rem;
+
+            & h3 {
+                line-height: 4.4rem;
+                font-size: 3.6rem;
+            }
+        }
+
+        .service-img {
+            overflow: hidden;
+
+            img {
+                transform: translateY(0.2rem) scale(1.05);
+            }
+        }
+    }
+}
+
+//servicessingle.html
+.services-single {
+    padding: 17rem 0;
+
+    h3 {
+        font-size: 4.4rem;
+        line-height: 5rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+}
